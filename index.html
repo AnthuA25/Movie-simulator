@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbarcomponent"></div>
+        <h2 class="titleMovie">Peliculas</h2>
+        <aside class="sidebar">
+            <select id="categoryFilter">
+                <option value="all">Todos</option>
+                <option value="drama">Drama</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="adventure">Adventure</option>
+                <option value="action">Action</option>
+                <option value="western">Western</option>
+                <option value="comedy">Comedy</option>
+                <option value="superhero">Superhero</option>
+                <option value="historical">Historical</option>
+            </select>
+        </aside>
+
+        <div id="movielistcomponent">
+        </div>
+
+    </div>
+    <script type="text/babel" src="js/App.js"></script>
+
+    <script type="text/babel" src="js/Movie.js"></script>
+    <script type="text/babel">
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    moviesData: [],
+                    selectedCategory: 'all',
+                };
+            }
+
+            componentDidMount() {
+                fetch("data/data.movies.json")
+                    .then((response) => response.json())
+                    .then((data) => {
+                        this.setState({ moviesData: data });
+                    })
+                    .catch((error) => console.error("hay un error", error));
+
+
+                const filter = document.getElementById("categoryFilter");
+                filter.addEventListener("change", (e) => {
+                    this.setState({ selectedCategory: e.target.value });
+                });
+            }
+
+            render() {
+                const { moviesData, selectedCategory } = this.state;
+                const filteredMovies = selectedCategory === 'all'
+                    ? moviesData
+                    : moviesData.filter(movie => movie.category === selectedCategory);
+
+                return <MovieListComponent moviesData={filteredMovies} />;
+            }
+        }
+        ReactDOM.render(<App />, document.getElementById("movielistcomponent"));
+    </script>
+</body>
+
+</html>

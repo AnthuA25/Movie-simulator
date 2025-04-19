@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "A Working Man",
+    "author": "John Carter",
+    "price": 29.99,
+    "category": "drama",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A man struggles to survive in a failing economy."
+  },
+  {
+    "id": 2,
+    "title": "In the Lost Lands",
+    "author": "George R. M.",
+    "price": 25.50,
+    "category": "fantasy",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A sorceress ventures into forbidden territories."
+  },
+  {
+    "id": 3,
+    "title": "A Minecraft Movie",
+    "author": "Pixel Studios",
+    "price": 19.99,
+    "category": "adventure",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "The block world faces a new threat."
+  },
+  {
+    "id": 4,
+    "title": "G20",
+    "author": "Jane Doe",
+    "price": 22.00,
+    "category": "action",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A political summit turns into chaos."
+  },
+  {
+    "id": 5,
+    "title": "Gunslingers",
+    "author": "S. Western",
+    "price": 27.00,
+    "category": "western",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "Three gunslingers face off in a desert town."
+  },
+  {
+    "id": 6,
+    "title": "Novocaine",
+    "author": "D. Black",
+    "price": 18.75,
+    "category": "comedy",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A dentist gets caught in a criminal web."
+  },
+  {
+    "id": 7,
+    "title": "Brave New World",
+    "author": "M. Hero",
+    "price": 31.99,
+    "category": "superhero",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "The next generation of heroes rises."
+  },
+  {
+    "id": 8,
+    "title": "A Knight's War",
+    "author": "Arthur L.",
+    "price": 23.50,
+    "category": "historical",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A knight defends his realm from invasion."
+  },
+  {
+    "id": 9,
+    "title": "Home Sweet Home",
+    "author": "Zed S.",
+    "price": 21.90,
+    "category": "horror",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A man returns to find his home haunted."
+  },
+  {
+    "id": 10,
+    "title": "The Woman in the Yard",
+    "author": "Laura R.",
+    "price": 24.00,
+    "category": "mystery",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A woman uncovers secrets in a rural town."
+  },
+  {
+    "id": 11,
+    "title": "Digital Destiny",
+    "author": "Tech Bros",
+    "price": 28.50,
+    "category": "sci-fi",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "In a world run by AI, one human dares to rebel."
+  },
+  {
+    "id": 12,
+    "title": "Neon Divide",
+    "author": "CyberCore",
+    "price": 26.00,
+    "category": "cyberpunk",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "Hackers take control of a neon-lit city."
+  },
+  {
+    "id": 13,
+    "title": "Echoes of Tomorrow",
+    "author": "Timelabs",
+    "price": 20.00,
+    "category": "time travel",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "What happens if you meet your future self?"
+  },
+  {
+    "id": 14,
+    "title": "The Final Trial",
+    "author": "Legend Books",
+    "price": 22.40,
+    "category": "fantasy",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A hero must pass the last test of fate."
+  },
+  {
+    "id": 15,
+    "title": "Urban Vengeance",
+    "author": "R. Steel",
+    "price": 30.99,
+    "category": "thriller",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "Justice is personal in the city streets."
+  },
+  {
+    "id": 16,
+    "title": "Whispers in the Fog",
+    "author": "M. Grey",
+    "price": 19.85,
+    "category": "suspense",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A detective follows a deadly trail in the mist."
+  },
+  {
+    "id": 17,
+    "title": "Planet Omega",
+    "author": "Galactic Inc.",
+    "price": 34.00,
+    "category": "sci-fi",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "Colonists battle aliens on a hostile planet."
+  },
+  {
+    "id": 18,
+    "title": "Crimson Rain",
+    "author": "H. Noir",
+    "price": 23.25,
+    "category": "crime",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A killer leaves clues in blood-soaked rain."
+  },
+  {
+    "id": 19,
+    "title": "The Forgotten Island",
+    "author": "Treasure Tales",
+    "price": 27.45,
+    "category": "adventure",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "A crew discovers a cursed treasure."
+  },
+  {
+    "id": 20,
+    "title": "Design Thinking",
+    "author": "Laura Martínez",
+    "price": 32.25,
+    "category": "design",
+    "image": "https://media.themoviedb.org/t/p/w600_and_h900_bestv2/xUkUZ8eOnrOnnJAfusZUqKYZiDu.jpg",
+    "description": "Principios y técnicas para crear experiencias de usuario excepcionales."
+  }
+]
