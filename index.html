@@ -21,6 +21,7 @@
       <div id="navbarcomponent"></div>
       <h2 class="titleMovie">Peliculas</h2>
       <aside class="sidebar">
+        <input type="text" id="searchInput" placeholder="Buscar películas..." />
         <select id="categoryFilter">
           <option value="all">Todos</option>
           <option value="drama">Drama</option>
@@ -40,7 +41,6 @@
 
     <script type="text/babel" src="js/Movie.js"></script>
 
-
     <script type="text/babel">
       class App extends React.Component {
         constructor(props) {
@@ -49,6 +49,7 @@
             moviesData: [],
             selectedCategory: "all",
             selectedMovie: null,
+            searchQuery: "",
           };
         }
 
@@ -64,6 +65,11 @@
           filter.addEventListener("change", (e) => {
             this.setState({ selectedCategory: e.target.value });
           });
+
+          const searchInput = document.getElementById("searchInput");
+          searchInput.addEventListener("input", (e) => {
+            this.setState({ searchQuery: e.target.value.toLowerCase() });
+          });
         }
 
         handleMovieClick = (movie) => {
@@ -74,18 +80,34 @@
           this.setState({ selectedMovie: null });
         };
         render() {
-          const { moviesData, selectedCategory, selectedMovie } = this.state;
+          const { moviesData, selectedCategory, selectedMovie,searchQuery } = this.state;
           if (selectedMovie) {
-            return <MovieDetailComponent movie={selectedMovie} goBack={this.goBack} />;
+            return (
+              <MovieDetailComponent
+                movie={selectedMovie}
+                goBack={this.goBack}
+              />
+            );
           }
+
+           // Filtrado por categoría
           const filteredMovies =
             selectedCategory === "all"
               ? moviesData
               : moviesData.filter(
                   (movie) => movie.category === selectedCategory
                 );
+          // Filtrado por búsqueda
+          const searchedMovies = filteredMovies.filter((movie) =>
+            movie.title.toLowerCase().includes(searchQuery)
+          );
 
-          return <MovieListComponent moviesData={filteredMovies} onMovieClick={this.handleMovieClick}/>;
+          return (
+            <MovieListComponent
+              moviesData={searchedMovies}
+              onMovieClick={this.handleMovieClick}
+            />
+          );
         }
       }
       ReactDOM.render(<App />, document.getElementById("movielistcomponent"));
