@@ -71,3 +71,10 @@
 
 }
 
+.favorite{
+    color: rgb(103, 103, 113);
+}
+
+.active{
+    color: red;
+}
